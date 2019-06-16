@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
+import { IBeer } from '../services/ibeer';
 
 @Component({
   selector: 'app-solution1',
@@ -6,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Solution1Component implements OnInit {
 
-  constructor() { }
+  data: Array<IBeer>;
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.dataService.get().subscribe(res => {
+      this.data = res;
+    });
   }
 
 }
