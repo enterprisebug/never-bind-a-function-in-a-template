@@ -7,7 +7,6 @@ import { DataService } from './services/data.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Never bind a function in a template Demo';
   data: Array<object>;
 
   constructor(private dataService: DataService) { }
