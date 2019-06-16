@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
-import { IBeer } from '../services/ibeer';
+import { DataService } from '../../services/data.service';
+import { IBeer } from '../../services/ibeer';
 
 @Component({
   selector: 'app-problem',
-  templateUrl: './problem.component.html'
+  templateUrl: './problem.component.html',
+  styles: ['code { white-space: pre; }']
 })
 export class ProblemComponent implements OnInit {
 
@@ -24,6 +25,7 @@ export class ProblemComponent implements OnInit {
   }
 
   clickMe() {
-
+    // does nothing!
+    // interesting things happen on console while clicking this button
   }
 }

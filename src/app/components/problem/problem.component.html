@@ -1,0 +1,21 @@
+<h2>1. Problem</h2>
+<p>
+  What we want to do here is to find all beers with name 'Pilsener'
+</p>
+<h3>the JSON data looks like this:</h3>
+<code>{{ data | json }}</code>
+
+
+<h2>2. Result:</h2>
+<div *ngFor="let beer of data">
+  <div *ngIf="checkForPilsener(beer)">{{beer.vendor}} - {{beer.name}}</div>
+</div>
+
+<h3>Have a look at the console output:</h3>
+<img src="./assets/problem_1.png" />
+
+<h2>3. Did you expect this?</h2>
+<p>
+
+</p>
+<button (click)="clickMe()">click me</button>
