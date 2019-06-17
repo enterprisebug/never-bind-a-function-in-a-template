@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
   <div class="navbar-nav-scroll">
     <ul class="navbar-nav flex-row">
       <li class="nav-item" [routerLinkActive]="['active']">
-        <a class="nav-link" [routerLink]="['/home']" (click)="navbarCollapsed = true">Home</a>
+        <a class="nav-link" [routerLink]="['/home']">Home</a>
       </li>
       <li class="nav-item" [routerLinkActive]="['active']">
-        <a class="nav-link" [routerLink]="['/problem']" (click)="navbarCollapsed = true">Problem</a>
+        <a class="nav-link" [routerLink]="['/problem']">Problem</a>
       </li>
       <li class="nav-item" [routerLinkActive]="['active']">
-        <a class="nav-link" [routerLink]="['/solution1']" (click)="navbarCollapsed = true">Solution 1</a>
+        <a class="nav-link" [routerLink]="['/solution1']">Solution 1</a>
       </li>
     </ul>
   </div>
