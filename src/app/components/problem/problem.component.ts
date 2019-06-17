@@ -5,7 +5,7 @@ import { IBeer } from '../../services/ibeer';
 @Component({
   selector: 'app-problem',
   templateUrl: './problem.component.html',
-  styles: ['code { white-space: pre; }']
+  styles: []
 })
 export class ProblemComponent implements OnInit {
 

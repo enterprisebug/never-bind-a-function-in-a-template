@@ -8,7 +8,11 @@ import { DataService } from './services/data.service';
     <app-header></app-header>
 
     <!-- routes will be rendered here -->
-    <router-outlet></router-outlet>
+    <section class="row py-5 px-2 px-md-4 px-lg-5">
+      <div class="col-12 col-xl-9">
+        <router-outlet></router-outlet>
+      </div>
+    </section>
   `,
   styles: []
 })

@@ -1,18 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { IBeer } from 'src/app/services/ibeer';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-home',
-  template: `
-  <div>Home</div>
-
-  `,
-  styles: []
+  templateUrl: './home.component.html',
+  styles: ['code { white-space: pre; }']
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  data: Array<IBeer>;
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.dataService.get().subscribe(res => {
+      this.data = res;
+    });
   }
 
 }
