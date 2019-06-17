@@ -18,4 +18,8 @@ export class Solution1Component implements OnInit {
     });
   }
 
+  clickMe() {
+    // does nothing!
+    // interesting things happen on console while clicking this button
+  }
 }

@@ -1,13 +1,12 @@
-<h2>2. Result:</h2>
+<h2>Result</h2>
 <div *ngFor="let beer of data">
   <div *ngIf="checkForPilsener(beer)">{{beer.vendor}} - {{beer.name}}</div>
 </div>
 
 <h3>Have a look at the console output:</h3>
 <img src="./assets/problem_1.png" />
+<p>Why is the function traversed twice?</p>
 
-<h2>3. Did you expect this?</h2>
-<p>
-
-</p>
+<h2>click the button</h2>
 <button (click)="clickMe()">click me</button>
+<p>WTF? when we click the button the binding is executed again?</p>

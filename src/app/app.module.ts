@@ -7,6 +7,7 @@ import { ProblemComponent } from './components/problem/problem.component';
 import { Solution1Component } from './components/solution1/solution1.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
+import { PilsenerComponent } from './components/solution1/pilsener/pilsener.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
     ProblemComponent,
     Solution1Component,
     HeaderComponent,
+    PilsenerComponent,
   ],
   imports: [
     BrowserModule,
