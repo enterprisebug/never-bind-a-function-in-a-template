@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/enterprisebug/never-bind-a-function-in-a-template.svg?branch=master)](https://travis-ci.org/enterprisebug/never-bind-a-function-in-a-template)
+
 # never bind a function in a template
 As the only one [@Michael_Hladky](https://twitter.com/Michael_Hladky) told me to 'never bind a function in a template' here is a repo to demonstrate the issue
 
